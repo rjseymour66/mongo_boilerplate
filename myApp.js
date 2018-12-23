@@ -15,10 +15,10 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert')
 
-const url = 'mongodb://@ds064748.mlab.com:64748/learnmongo'
+const url = process.env.MONGO_URI
 const dbName = 'learnmongo';
 
-MongoClient.connect(url, {user: 'rjs66', pass: 'Rynomite@83'}, function(err, client) {
+MongoClient.connect(url, function(err, client) {
   assert.equal(null, err);
   console.log('Connected successfully to the server');
   
