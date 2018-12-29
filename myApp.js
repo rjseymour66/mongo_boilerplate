@@ -28,7 +28,7 @@ MongoClient.connect(url, function(err, client) {
 })
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://@ds064748.mlab.com:64748/learnmongo', {user: 'rjs66', pass: 'Rynomite@83'})
+mongoose.connect('mongodb://@ds064748.mlab.com:64748/learnmongo', {user: 'XXXX', pass: 'XXXXXXXX'})
 
 /** # SCHEMAS and MODELS #
 /*  ====================== */
